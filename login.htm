@@ -1,0 +1,183 @@
+<html>
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header {
+            background-color: #23252b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        header a {
+            color: #ff8000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .login-container {
+            text-align: center;
+        }
+        .login-box {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+        .login-box h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .login-box p {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #ff6600;
+            background: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px solid #fff;
+            background: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #ff6600;
+            border-color: #ff6600;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .create-account {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .create-account:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .bottom-bar {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .bottom-bar .left {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .left img {
+            margin-right: 10px;
+        }
+        footer .bottom-bar .right {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .right select {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm"><img src="logo.png"/><h1>Anime <!--Website Name--> </h1></a>
+    </header>
+    <div class="login-container">
+        <h1>Log In</h1>
+        <div class="login-box">
+            <p>Classic anime jams, epic movies, and endless shows.<br>They're all here!</p>
+            <input type="text" placeholder="Email or Phone Number">
+            <button>NEXT</button>
+        </div>
+        <p>No account? <a href="create_acc.htm" class="create-account">CREATE ONE</a></p>
+    </div>
+    <div class="footer">
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Consent Tool</a>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Consent Tool</a>
+        </div>
+        <div class="bottom-bar">
+            <div class="left">
+                <span>SOMANSH PICTURES || © <!--Website Name-->, LLC |</span>
+            </div>
+            <div class="right">
+                <span>| ENGLISH (US)</span>
+                <select>
+                    <option>ENGLISH (US)</option>
+                    <option>JAPANESE</option>
+                    <option>KOREAN</option>
+                    <option>SIMPLIFIED CHINESE</option>
+                    <option>TRADITIONAL CHINESE</option>
+                    <!-- Add other languages as needed -->
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

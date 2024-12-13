@@ -1,0 +1,220 @@
+<html>
+<head>
+    <title>Create Account</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        header {
+            background-color: #23252b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        header a {
+            color: #ff8000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .heading {
+            margin-bottom: auto;
+        }
+        .container {
+            position: relative;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #ff6600;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 14px;
+        }
+        .container label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .container label input {
+            margin-right: 10px;
+        }
+        .container .privacy-policy {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .next-button {
+            width: 15%;
+            padding: 10px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .next-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .login-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .login-link a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .anime-character {
+            position: absolute;
+            left: -150px;
+            bottom: 0;
+            height: 100%;
+        }
+        .cat {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            height: 100px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .bottom-bar {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .bottom-bar .left {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .left img {
+            margin-right: 10px;
+        }
+        footer .bottom-bar .right {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .right select {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .anime-character {
+                display: none;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                height: auto;
+            }
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm"><img src="logo.png"/><h1>Anime <!--Website Name--> </h1></a>
+    </header>
+    <div class="heading">
+        <h1>Create Account</h1>
+    </div>
+    <div class="container">
+        <p>Welcome to the home of anime fandom!<br/>Let's start by creating an account.</p>
+        <input placeholder="Email or Phone Number" type="text"/>
+        <label for="privacy-policy">
+        <input type="checkbox"/><p>I want all the latest Anime<!--Website name--> info, offers, and news.<br> All communications are subject to our<a class="privacy-policy" href="">Privacy Policy</a>.<br> Opt out anytime.</p>
+        </label>
+    </div>
+    <button class="next-button">NEXT</button>
+    <div class="login-link">
+        <span class="">Already have an account?</span>
+        <a href="login.htm">LOG IN</a>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Consent Tool</a>
+        </div>
+        <div class="bottom-bar">
+            <div class="left">
+                <span>SOMANSH PICTURES || © <!--Website Name-->, LLC |</span>
+            </div>
+            <div class="right">
+                <span>| ENGLISH (US)</span>
+                <select>
+                    <option>ENGLISH (US)</option>
+                    <option>JAPANESE</option>
+                    <option>KOREAN</option>
+                    <option>SIMPLIFIED CHINESE</option>
+                    <option>TRADITIONAL CHINESE</option>
+                    <!-- Add other languages as needed -->
+                </select>
+            </div>
+        </div>
+    </footer>
+    <!-- <img alt="Anime character with long orange hair and orange outfit" class="anime-character" height="" src="" width=""/> -->
+    <!-- <img alt="Cute black cat peeking from the top right corner" class="cat" height="" src="" width=""/> -->
+</body>
+</html>

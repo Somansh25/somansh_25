@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .filter-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .dropdown.show {
+            display: block;
+        }
+        .dropdown p {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+        .dropdown p:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <h1>Anime</h1>
+    </div>
+
+        <input type="text" placeholder="Search for anime...">
+        <button class="search-button">Search</button>
+        <button class="filter-button" id="filterButton">Filter</button>
+        <div id="dropdown" class="dropdown">
+            <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="historical">Historical</option>
+                    <option value="horror">Horror</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Science Fiction</option>
+                    <option value="slice-of-life">Slice of Life</option>
+                    <option value="supernatural">Supernatural</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="war">War</option>
+                    <option value="western">Western</option>
+                    <option value="other">Other</option>
+                </select>
+            </label><br>
+            <label>
+                <label for="year">Year:</label>
+                    <select id="year">
+                        <option value="">All</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                    </select>
+                    </label>
+            </label><br>
+            <label>
+                <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="">All</option>
+                        <option value="G">G</option>
+                        <option value="PG">PG</option>
+                        <option value="PG-13">PG-13</option>
+                        <option value="R">R</option>
+                        <option value="NC-17">NC-17</option>
+                        <option value="NR">NR</option>
+                        <option value="18+">18+</option>
+                        <option value="7+">7+</option>
+                        <option value="6+">6+</option>
+                        <option value="5+">5+</option>
+                        <option value="4+">4+</option>
+                        <option value="3+">3+</option>
+                        <option value="2+">2+</option>
+                        <option value="1+">1+</option>
+                        <option value="0+">0+</option>
+                    </select>
+            </label><br>
+            <label>
+                <button class="btn-reset">Reset</button>
+            </label>
+            <label>
+                <button class="btn-apply">Apply</button>
+            </label><br>
+        </div>
+
+
+
+    <script>
+        const filterButton = document.getElementById('filterButton');
+        const dropdown = document.getElementById('dropdown');
+
+        filterButton.addEventListener('click', () => {
+            dropdown.classList.toggle('show');
+        });
+
+        window.addEventListener('click', (event) => {
+            if (!filterButton.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

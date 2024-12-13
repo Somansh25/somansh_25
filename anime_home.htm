@@ -1,0 +1,242 @@
+<html>
+<head>
+    <title>Anime Prime</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #2c2c54;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #3a3a6a;
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+        .header .search-bar input {
+            border: none;
+            background: none;
+            color: #ffffff;
+            padding: 5px;
+            outline: none;
+        }
+        .header .search-bar i {
+            margin-right: 10px;
+        }
+        .header .buttons a {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .header .buttons .sign-up {
+            background-color: #6a00ff;
+        }
+        .header .buttons .sign-in {
+            background-color: #3a3a6a;
+        }
+        .main-banner {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .main-banner img {
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+        .main-banner .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .main-banner .content h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .main-banner .content p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .main-banner .content .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #3a3a6a;
+            border-radius: 25px;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+        .main-banner .content .search-bar input {
+            border: none;
+            background: none;
+            color: #ffffff;
+            padding: 5px;
+            outline: none;
+        }
+        .main-banner .content .search-bar button {
+            background-color: #6a00ff;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .featured-anime, .genres {
+            margin-top: 40px;
+        }
+        .featured-anime h2, .genres h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .featured-anime .anime-list, .genres .genre-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .featured-anime .anime-list img, .genres .genre-list a {
+            border-radius: 10px;
+        }
+        .featured-anime .anime-list img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .genres .genre-list a {
+            background-color: #3a3a6a;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .genres .explore-genres {
+            display: block;
+            margin-top: 20px;
+            background-color: #6a00ff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header .search-bar {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .header .buttons {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .main-banner .content h1 {
+                font-size: 24px;
+            }
+            .main-banner .content p {
+                font-size: 14px;
+            }
+            .main-banner .content .search-bar {
+                flex-direction: column;
+            }
+            .main-banner .content .search-bar input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .main-banner .content .search-bar button {
+                width: 100%;
+            }
+            .featured-anime .anime-list, .genres .genre-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .featured-anime .anime-list img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+            Anime Prime
+            </div>
+            <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input placeholder="Search" type="text"/>
+            </div>
+            <div class="buttons">
+            <a class="sign-up" href="#">Sign up</a>
+            <a class="sign-in" href="#">Sign in</a>
+            </div>
+        </div>
+        <div class="main-banner">
+            <img alt="Anime characters in a colorful background" height="300" src="https://static.wikia.nocookie.net/codegeass/images/0/0f/Camelot_Members.png/revision/latest/scale-to-width-down/1000?cb=20130129013809" width="600"/>
+            <div class="content">
+                <h1>New season, new anime</h1>
+                <p>Discover the latest anime series</p>
+                <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input placeholder="Search for anime..." type="text"/>
+                <button>Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="featured-anime">
+            <h2>Featured anime</h2>
+            <div class="anime-list">
+                <img alt="Anime scene 1" height="100" src="https://storage.googleapis.com/a1aa/image/5dA6VCvLPkZoEheGPdumL8VYUVvKi6Gxs2XvcPiDuyBxYQ9JA.jpg" width="150"/>
+                <img alt="Anime scene 2" height="100" src="https://storage.googleapis.com/a1aa/image/ksIafICGgOwLXCDwGcWeUKBizWR2zIPmeRCQngdhAHDIjB1nA.jpg" width="150"/>
+                <img alt="Anime scene 3" height="100" src="https://storage.googleapis.com/a1aa/image/vMVf9l1Q0Fzf2Eq0Bwby21IeN1mO6PrUlpjobgeVeN4PMGUfE.jpg" width="150"/>
+                <img alt="Anime scene 4" height="100" src="https://storage.googleapis.com/a1aa/image/5tT8vek0kdwxQae3Mx2NHuMfO05fU87myKqEf5MAmKYYMGUfE.jpg" width="150"/>
+                <img alt="Anime scene 5" height="100" src="https://storage.googleapis.com/a1aa/image/6o7mYyJxl4odK9mxf9vReyJgmcWI4ROvSvOftkkJM21fFDqPB.jpg" width="150"/>
+            </div>
+        </div>
+        <div class="genres">
+            <h2>Genres</h2>
+            <div class="genre-list">
+                <a href="#">Action</a>
+                <a href="#">Adventure</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Fantasy</a>
+                <a href="#">Horror</a>
+                <a href="#">Mystery</a>
+                <a href="#">Romance</a>
+                <a href="#">Sci-fi</a>
+                <a href="#">Slice of life</a>
+            </div>
+            <a class="explore-genres" href="#">Explore genres</a>
+        </div>
+    </div>
+
+</body>
+</html>

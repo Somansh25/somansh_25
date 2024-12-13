@@ -1,0 +1,213 @@
+<html>
+<head>
+    <title>Register Account</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header {
+            background-color: #23252b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        header a {
+            color: #ff8000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            width: 400px;
+        }
+        .container img {
+            position: absolute;
+            top: 20px;
+            left: -150px;
+            height: 400px;
+        }
+        .container .cat {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            height: 100px;
+        }
+        .container h1 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .container p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .container .show-password {
+            position: absolute;
+            right: 30px;
+            top: 160px;
+            cursor: pointer;
+        }
+        .container .password-hint {
+            font-size: 12px;
+            color: #ccc;
+        }
+        .container .terms {
+            font-size: 12px;
+            color: #ccc;
+            margin: 20px 0;
+        }
+        .container .terms a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .container button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container .back {
+            margin-top: 10px;
+            color: #ff6600;
+            cursor: pointer;
+        }
+        .terms_privacy-policy .back {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .terms_privacy-policy .terms a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .terms_privacy-policy .create-account  {
+            background-color: #000000;
+            border-color: #59595b;
+            color: #59595b;
+        }
+        .terms_privacy-policy .back a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .bottom-bar {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .bottom-bar .left {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .left img {
+            margin-right: 10px;
+        }
+        footer .bottom-bar .right {
+            display: flex;
+            align-items: center;
+        }
+        footer .bottom-bar .right select {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm"><img src="logo.png"/><h1>Anime <!--Website Name--> </h1></a>
+    </header>
+    <div class="container">
+        <!-- <img alt="Anime character with long orange hair, wearing an orange outfit, holding a tablet" height="" src="" width=""/> -->
+        <!-- <img alt="Small black cat with white-tipped tail, peeking over the top of the container" class="cat" height="" src="" width=""/> -->
+        <h1>Create Account</h1>
+        <p>Next up, creating a password that's at least 6 characters long.</p>
+        <input readonly="" type="email" placeholder="Enter Email"/>
+        <div style="position: relative;">
+            <input placeholder="Create Password" type="password"/>
+            <span class="show-password">SHOW</span>
+        </div>
+        <p class="password-hint">Use at least 8 characters, do not use empty spaces</p>
+    </div>
+    <div class="terms_privacy-policy">
+        <p class="terms">By creating an account you're agreeing to our<a href="#">Terms &amp; Privacy Policy</a>,<br> and you confirm that you are at least 16 years of age.</p>
+        <button class="create-account">CREATE ACCOUNT</button>
+        <div class="back">
+            <a href="login.htm">BACK</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Consent Tool</a>
+        </div>
+        <div class="bottom-bar">
+            <div class="left">
+                <span>SOMANSH PICTURES || © <!--Website Name-->, LLC |</span>
+            </div>
+            <div class="right">
+                <span>| ENGLISH (US)</span>
+                <select>
+                    <option>ENGLISH (US)</option>
+                    <option>JAPANESE</option>
+                    <option>KOREAN</option>
+                    <option>SIMPLIFIED CHINESE</option>
+                    <option>TRADITIONAL CHINESE</option>
+                    <!-- Add other languages as needed -->
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
